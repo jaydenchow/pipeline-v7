@@ -4,11 +4,11 @@ pipelines:
       - name: docker_build
         type: DockerBuild
         configuration:
-          affinityGroup: docker_afgroup             # Execute build and push on the same node
+          affinityGroup:docker_afgroup             # Execute build and push on the same node
           dockerFileLocation: .
-          dockerFileName: Dockerfile
-          dockerImageName: 'pipe-master.jfrog.info:8081/docker-local/alpine37'
-          dockerImageTag: $run_number
+          dockerFileName:Dockerfile
+          dockerImageName:'pipe-master.jfrog.info:8081/docker-local/alpine37'
+          dockerImageTag:7
           inputResources:
             - name: repo_docker_build_push
           integrations:
