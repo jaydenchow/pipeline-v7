@@ -10,6 +10,6 @@ resources:
   - name: build_info_docker_build_push
     type: BuildInfo
     configuration:
-      sourceArtifactory: demoArt
+      sourceArtifactory: artifactory
       buildName: svc_build
       buildNumber: 1
